@@ -3,6 +3,7 @@ name: Update Spotify Playlist Daily
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs the script every day at midnight UTC
+    workflow_dispatch:  # Allows for manual triggering
 
 jobs:
   update_playlist:
