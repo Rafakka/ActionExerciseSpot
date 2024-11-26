@@ -24,7 +24,7 @@ def get_random_artist(genre):
 
 def get_lastest_tracks():
     artist_name = get_random_artist("indie")
-    results = sp.search(q=f"artist:{artist_name}", type="track", limit=10)
+    results = sp.search(q=f"artist:{artist_name}", type="track", limit=50)
     tracks = [item['uri'] for item in results ['tracks']['items']]
     return tracks
 
