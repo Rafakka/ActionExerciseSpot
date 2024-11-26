@@ -21,8 +21,8 @@ def update_playlist(playlist_id, track_uris):
 
 if __name__ == "__main__":
     # Replace these with your playlist ID and artist
-    playlist_id = "YOUR_PLAYLIST_ID"
-    artist_name = "Coldplay"
+    playlist_id = "By GitActions"
+    artist_name = "The Cure"
 
     new_tracks = get_latest_tracks(artist_name)
     update_playlist(playlist_id, new_tracks)
