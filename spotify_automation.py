@@ -7,7 +7,7 @@ load_dotenv()
 
 # Authentication
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id=os.getenv("SPOTIPÝ_CLIENT_ID"),
+    client_id=os.getenv("SPOTIPY_CLIENT_ID"),
     client_secret=os.getenv("SPOTIPY_CLIENT_SECRET"),
     redirect_uri=os.getenv("SPOTIPY_REFIRECT_URI"),
     scope="playlist-modify-public"
